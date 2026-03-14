@@ -3,97 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P.G. Dog-Radar | Bremen</title>
+    <title>P.G. Dog-Radar | Bremen — Die Hunde-Community</title>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --navy: #0a1628; --gold: #d4a843; --white: #ffffff; --green: #22c55e; }
-        body { font-family: 'DM Sans', sans-serif; background: var(--navy); color: var(--white); margin: 0; line-height: 1.6; }
-        header { padding: 80px 20px; text-align: center; background: radial-gradient(circle at center, #122040 0%, #0a1628 100%); }
-        h1 { font-family: 'Syne', sans-serif; font-size: 3rem; color: var(--gold); margin: 0; }
-        .tagline { font-size: 1.2rem; opacity: 0.8; margin-bottom: 30px; }
-        .btn { display: inline-block; padding: 18px 40px; background: var(--gold); color: var(--navy); text-decoration: none; border-radius: 50px; font-weight: 800; font-size: 1.1rem; transition: all 0.3s; box-shadow: 0 4px 20px rgba(212,168,67,0.3); }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 25px rgba(212,168,67,0.4); }
-        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; }
-        .card { background: rgba(255,255,255,0.03); padding: 30px; border-radius: 20px; border: 1px solid rgba(212,168,67,0.15); transition: 0.3s; }
-        .card:hover { border-color: var(--gold); background: rgba(255,255,255,0.05); }
-        .card h3 { color: var(--gold); font-family: 'Syne'; margin-top: 0; }
-        .counter { font-size: 2.5rem; font-weight: 800; color: var(--green); display: block; }
-        footer { background: #050c18; padding: 60px 20px; border-top: 1px solid rgba(255,255,255,0.05); }
-        .legal-links { margin-bottom: 30px; }
-        .legal-link { color: rgba(255,255,255,0.5); text-decoration: none; margin-right: 20px; font-size: 0.9rem; cursor: pointer; }
+        :root { --navy: #0a1628; --gold: #d4a843; --white: #ffffff; --green: #22c55e; --red: #ef4444; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--navy); color: var(--white); margin: 0; line-height: 1.6; overflow-x: hidden; }
+        header { padding: 100px 20px; text-align: center; background: radial-gradient(circle at center, #122040 0%, #0a1628 100%); }
+        h1 { font-family: 'Syne', sans-serif; font-size: clamp(2.5rem, 8vw, 4rem); color: var(--gold); margin: 0; letter-spacing: -1px; }
+        .tagline { font-size: 1.2rem; opacity: 0.8; margin: 20px 0 40px; }
+        .btn-main { display: inline-block; padding: 20px 45px; background: var(--gold); color: var(--navy); text-decoration: none; border-radius: 50px; font-weight: 800; font-size: 1.2rem; transition: all 0.3s; box-shadow: 0 10px 30px rgba(212,168,67,0.3); }
+        .btn-main:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(212,168,67,0.4); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; }
+        .pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .pillar-card { background: rgba(255,255,255,0.03); padding: 40px; border-radius: 24px; border: 1px solid rgba(212,168,67,0.1); transition: 0.3s; }
+        .pillar-card:hover { border-color: var(--gold); background: rgba(255,255,255,0.06); }
+        .pillar-card h3 { color: var(--gold); font-family: 'Syne'; margin-bottom: 15px; font-size: 1.5rem; }
+        footer { background: #050c18; padding: 80px 20px; border-top: 1px solid rgba(255,255,255,0.05); }
+        .legal-nav { margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 20px; }
+        .legal-link { color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.9rem; cursor: pointer; transition: 0.2s; }
         .legal-link:hover { color: var(--gold); }
-        .legal-box { display: none; background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; margin-top: 20px; font-size: 0.85rem; border: 1px dashed rgba(255,255,255,0.1); }
+        .legal-content { display: none; background: rgba(255,255,255,0.02); padding: 30px; border-radius: 15px; margin-top: 20px; border: 1px dashed rgba(255,255,255,0.1); font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>📡 P.G. Dog-Radar</h1>
-    <p class="tagline">Das 4-Säulen-Sicherheitssystem für Bremens Hundehalter.</p>
-    <a href="app.html" class="btn">ZUR APP WECHSELN</a>
-    <div style="margin-top:40px;">
-        <span class="counter">302+</span>
-        <p style="font-size:0.9rem; opacity:0.6;">Registrierte Unterstützer in 28357 & Umgebung</p>
-    </div>
+    <p class="tagline">Sicherheit, Ernährung & Community für Bremer Hunde.</p>
+    <a href="app.html" class="btn-main">ZUR APP WECHSELN</a>
 </header>
 
 <div class="container">
-    <div class="grid">
-        <div class="card">
-            <h3>Säule 1</h3>
-            <p><strong>Sicherheit & Radar:</strong> Live-Standortanzeige und Warnung vor Giftködern oder Gefahrstellen in Echtzeit.</p>
-        </div>
-        <div class="card">
-            <h3>Säule 2</h3>
-            <p><strong>Gesunde Küche:</strong> Regionale Rezepte und Ernährungsberatung für ein langes, vitales Hundeleben.</p>
-        </div>
-        <div class="card">
-            <h3>Säule 3</h3>
-            <p><strong>Community:</strong> Vernetzung mit Haltern aus der Nachbarschaft für gemeinsame Spaziergänge.</p>
-        </div>
-        <div class="card">
-            <h3>Säule 4</h3>
-            <p><strong>SOS-Anker:</strong> Notfall-Hilfesystem, falls Halter oder Hund im Park medizinische Hilfe benötigen.</p>
-        </div>
+    <div class="pillars">
+        <div class="pillar-card"><h3>1. Sicherheit</h3><p>Live-Radar zur Vermeidung von Konflikten und Echtzeit-Warnungen.</p></div>
+        <div class="pillar-card"><h3>2. Ernährung</h3><p>Die "Hunde-Küche" für ein vitales Hundeleben in Bremen.</p></div>
+        <div class="pillar-card"><h3>3. Community</h3><p>Vernetze dich mit anderen Haltern in deiner Nachbarschaft.</p></div>
+        <div class="pillar-card"><h3>4. SOS-Anker</h3><p>Sofortige Hilfe bei medizinischen Notfällen im Park.</p></div>
     </div>
 </div>
 
 <footer>
     <div class="container">
-        <div class="legal-links">
-            <span class="legal-link" onclick="toggleLegal('imp')">Impressum</span>
-            <span class="legal-link" onclick="toggleLegal('ds')">Datenschutz</span>
-            <span class="legal-link" onclick="toggleLegal('agb')">Nutzungsbedingungen</span>
+        <div class="legal-nav">
+            <span class="legal-link" onclick="showLegal('impressum')">Impressum</span>
+            <span class="legal-link" onclick="showLegal('datenschutz')">Datenschutz</span>
         </div>
 
-        <div id="imp" class="legal-box">
-            <strong>Impressum</strong><br><br>
+        <div id="impressum" class="legal-content">
+            <strong>Impressum nach § 5 TMG</strong><br><br>
             Patrick Gündel<br>
             Ostwaldstraße 22<br>
-            28357 Bremen<br><br>
-            Kontakt: kontakt@pg-dogradar.de
+            28357 Bremen<br>
+            E-Mail: info@dog-radar.de
         </div>
 
-        <div id="ds" class="legal-box">
+        <div id="datenschutz" class="legal-content">
             <strong>Datenschutzerklärung (DSGVO)</strong><br><br>
-            Wir nehmen den Schutz Ihrer Daten ernst. Die App "P.G. Dog-Radar" speichert Standorte nur während der Nutzung. Es erfolgt keine Weitergabe an Dritte. Alle Daten werden auf EU-Servern verarbeitet. Sie haben ein Recht auf Löschung und Auskunft gemäß Art. 15 DSGVO.
+            Wir verarbeiten personenbezogene Daten (z.B. Standortdaten) nur mit Ihrer Einwilligung. Kontakt: info@dog-radar.de
         </div>
-
-        <div id="agb" class="legal-box">
-            <strong>Nutzungsbedingungen</strong><br><br>
-            Die Nutzung der SOS-Funktion ist ausschließlich für echte Notfälle vorgesehen. Missbrauch kann zum Ausschluss aus der Community führen.
-        </div>
-        <p style="opacity:0.3; font-size:0.7rem;">&copy; 2026 P.G. Dog-Radar Bremen. Alle Rechte vorbehalten.</p>
+        <p style="opacity:0.2; font-size:0.8rem; margin-top:40px;">&copy; 2026 P.G. Dog-Radar | Bremen.</p>
     </div>
 </footer>
 
 <script>
-    function toggleLegal(id) {
-        const boxes = document.querySelectorAll('.legal-box');
-        boxes.forEach(b => { if(b.id !== id) b.style.display = 'none'; });
-        const el = document.getElementById(id);
-        el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    function showLegal(id) {
+        document.querySelectorAll('.legal-content').forEach(el => el.style.display = 'none');
+        document.getElementById(id).style.display = 'block';
     }
 </script>
 </body>
