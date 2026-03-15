@@ -2,12 +2,14 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutz - P.G. Dog-Radar Bremen</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; background: #fafaf8; }
         h1 { color: #e07c1a; }
-        h2 { margin-top: 30px; color: #444; font-size: 1.2rem; }
-        .box { background: white; padding: 30px; border-radius: 15px; border: 1px solid #eee; }
+        h2 { margin-top: 30px; color: #444; font-size: 1.2rem; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .box { background: white; padding: 30px; border-radius: 15px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .back-link { display: inline-block; margin-top: 30px; color: #e07c1a; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -18,17 +20,26 @@
         <p>Diese Erklärung gibt einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
 
         <h2>2. Verantwortliche Stelle</h2>
-        <p>Patrick Gündel<br>Ostwaldstraße 22<br>28357 Bremen<br>E-Mail: info@dog-radar.de</p>
+        <p><strong>Patrick Gündel</strong><br>Ostwaldstraße 22<br>28357 Bremen<br>E-Mail: <a href="mailto:info@dog-radar.de" style="color: #e07c1a;">info@dog-radar.de</a></p>
 
-        <h2>3. Datenerfassung</h2>
-        <p><strong>Standortdaten:</strong> Innerhalb der App-Funktion werden Standortdaten verarbeitet, sofern Sie dem explizit zustimmen. Diese dienen nur der Darstellung auf der Karte für andere Nutzer ("Radar").</p>
-        <p><strong>Server-Logs:</strong> Unser Provider erhebt automatisch Log-Dateien (IP-Adresse, Browser), um den sicheren Betrieb der Seite zu gewährleisten.</p>
+        <h2>3. Datenerfassung & Hosting</h2>
+        <p><strong>Hosting (GitHub Pages / IONOS):</strong> Unsere Website wird extern gehostet. Dabei werden automatisch Server-Logfiles (IP-Adresse, Browsertyp, Datum/Uhrzeit) erhoben, um den sicheren Betrieb der Seite zu gewährleisten.</p>
+        
+        <p><strong>SSL-Verschlüsselung:</strong> Diese Seite nutzt eine SSL-Verschlüsselung (https://), um Ihre Daten bei der Übertragung zu schützen.</p>
 
-        <h2>4. Ihre Rechte</h2>
-        <p>Sie haben das Recht auf Auskunft, Löschung und Berichtigung Ihrer Daten. Kontaktieren Sie uns dazu einfach unter info@dog-radar.de.</p>
+        <p><strong>Standortdaten:</strong> Innerhalb der Radar-Funktion werden Standortdaten nur verarbeitet, sofern Sie dem im Browser explizit zustimmen. Diese dienen ausschließlich der Darstellung auf der Karte.</p>
 
-        <br>
-        <a href="index.html" style="color: #e07c1a; text-decoration: none; font-weight: bold;">← Zurück zur Startseite</a>
+        <h2>4. Google Translate</h2>
+        <p>Wir nutzen Google Translate, um die Seite barrierefrei anzubieten. Dabei werden Daten (wie Ihre IP-Adresse) an Google übertragen. Dies ist für die technische Bereitstellung der Übersetzung notwendig.</p>
+
+        <h2>5. Ihre Rechte</h2>
+        <p>Sie haben das Recht auf Auskunft, Löschung und Berichtigung Ihrer Daten. Kontaktieren Sie uns dazu einfach unter der oben genannten E-Mail-Adresse.</p>
+
+        <a href="index.html" class="back-link">← Zurück zur Startseite</a>
     </div>
+    
+    <footer style="text-align: center; margin-top: 20px; font-size: 0.8rem; color: #999;">
+        Stand: März 2026
+    </footer>
 </body>
 </html>
